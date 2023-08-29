@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tektur', sans-serif;
+  height: 100vh;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-right: 20px;
+}
+
+.header p {
+  color: #000;
+  margin-left: 20px;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.header ul li a:hover {
+  color: #a3a3a3;
+}
+
+.header ul li a svg {
+  margin-right: 5px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.heading p {
+  color: #a3a3a3;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.boxes div {
+  padding: 30px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+
+.boxes h2 {
+  margin-top: 20px;
+}
+
+.boxes a:hover {
+  color: #a3a3a3;
+}
+
+.form {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  padding: 25px
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+  color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-group-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-svg svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #000;
+  color: #fff;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-sm {
+  padding: 5px 15px;
+  font-size: 13px;
+}
+
+.btn-danger {
+  background: darkred;
+  border: none;
+}
+
+.btn-back {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.transaction-created {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.transaction-number {
+  margin-bottom: 30px;
+}
+
+.transaction-number h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.transaction-number p {
+  font-size: 1.3rem;
+}
+
+.transaction-info {
+  font-size: 1.3rem;
+}
+
+.transaction,
+.transaction-headings {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.transaction-headings {
+  font-weight: 700;
+}
+
+.user,
+.user-headings {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #f4f4f4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.user-headings {
+  font-weight: 700;
+}
+
+.type {
+  background-color: #333;
+  color: #fff;
+  width: 100px;
+  padding: 0 20px;
+  justify-self: center;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.type-income {
+  background-color: green;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.type-expense {
+  background-color: darkred;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.level {
+  background-color: #333;
+  color: #fff;
+  width: 100px;
+  padding: 0 20px;
+  justify-self: center;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.level-low {
+  background-color: green;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.level-medium {
+  background-color: steelblue;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.level-high {
+  background-color: darkred;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.transaction-page {
+  position: relative;
+  text-align: left;
+}
+
+.transaction-page h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transaction-page .btn {
+  margin-bottom: 30px;
+}
+
+.transaction-page .btn-block {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.transaction-desc {
+  margin: 20px 0;
+  font-size: 17px;
+  background-color: #f4f4f4;
+  border: 1px #ccc solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.transaction-desc h3, p {
+  color: #000;
+}
+
+.note {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.note-head {
+  background: #f4f4f4;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.note-date {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.delete-note {
+  color: red;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  color: red;
+  transform: scale(0.98);
+}
+
+p.status-in-progress {
+  color: orangered;
+}
+
+p.status-waiting {
+  color: red;
+}
+
+p.status-ready {
+  color: steelblue;
+}
+
+p.status-complete {
+  color: green;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.footer p {
+  color: #000;
+  margin: 5px 0;
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #fff transparent #fff transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+.error {
+  display: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 100px 0 200px;
+}
+
+.error h1 {
+  font-size: 50px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .transaction-created h2,
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
